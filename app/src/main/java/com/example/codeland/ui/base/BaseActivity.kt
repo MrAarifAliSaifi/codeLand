@@ -10,9 +10,9 @@ import androidx.viewbinding.ViewBinding
 
 abstract class BaseActivity<VM : BaseViewModel, VB : ViewBinding> : AppCompatActivity() {
 
-    private lateinit var binding: VB
+     lateinit var binding: VB
 
-    private lateinit var viewModel: VM
+     lateinit var viewModel: VM
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = provideViewBinding()
@@ -33,6 +33,7 @@ abstract class BaseActivity<VM : BaseViewModel, VB : ViewBinding> : AppCompatAct
 
     @LayoutRes
     protected abstract fun provideLayoutId(): Int
+
     protected abstract fun providePageName(): String
     protected abstract fun setupView(savedInstanceState: Bundle?)
     protected abstract fun getViewModelClass(): Class<VM>

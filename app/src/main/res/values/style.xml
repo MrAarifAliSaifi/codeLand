@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="BodyTinnyPoppins" parent="Widget.AppCompat.TextView">
+        <item name="android:fontFamily">@font/poppins_semibold</item>
+        <item name="android:textSize">@dimen/font_size_20</item>
+    </style>
+
+    <style name="TextInputLayoutStyle" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense">
+        <item name="boxStrokeColor">@color/text_hint</item>
+        <item name="boxStrokeWidth">@dimen/dp_0_5</item>
+        <item name="boxCornerRadiusTopStart">@dimen/dp_8</item>
+        <item name="boxCornerRadiusTopEnd">@dimen/dp_8</item>
+        <item name="boxCornerRadiusBottomEnd">@dimen/dp_8</item>
+        <item name="boxCornerRadiusBottomStart">@dimen/dp_8</item>
+        <item name="hintTextColor">@color/text_hint</item>
+        <item name="errorTextColor">@color/text_error</item>
+        <item name="boxStrokeErrorColor">@color/text_error</item>
+    </style>
+</resources>

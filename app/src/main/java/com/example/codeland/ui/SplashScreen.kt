@@ -1,6 +1,10 @@
 package com.example.codeland.ui
 
+import android.content.Intent
 import android.os.Bundle
+import android.os.Handler
+import android.os.Looper
+import android.widget.Toast
 import com.example.codeland.R
 import com.example.codeland.databinding.SplashBindingBinding
 import com.example.codeland.ui.base.BaseActivity
@@ -10,6 +14,7 @@ class SplashScreen : BaseActivity<SplashScreenViewModel, SplashBindingBinding>()
 
     companion object {
         const val TAG = "SplashScreen"
+        private const val SPLASH_SCREEN_DELAY = 2000L
     }
 
     override fun provideViewBinding(): SplashBindingBinding =
@@ -24,6 +29,14 @@ class SplashScreen : BaseActivity<SplashScreenViewModel, SplashBindingBinding>()
     }
 
     override fun setupView(savedInstanceState: Bundle?) {
+       moveToLoginScreen()
+        Toast.makeText(this, "This is toast from the system calling of.", Toast.LENGTH_SHORT).show()
+    }
 
+    private fun moveToLoginScreen(){
+        Handler(Looper.getMainLooper()).postDelayed({
+            startActivity(LoginScreen.getStartIntent(this))
+            finish()
+        }, SPLASH_SCREEN_DELAY)
     }
 }

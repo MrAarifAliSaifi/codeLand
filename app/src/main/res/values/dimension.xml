@@ -66,11 +66,15 @@
     <dimen name="dp_180">180dp</dimen>
     <dimen name="dp_184">184dp</dimen>
     <dimen name="dp_200">200dp</dimen>
+    <dimen name="dp_202">202dp</dimen>
+    <dimen name="dp_210">210dp</dimen>
+    <dimen name="dp_213">213dp</dimen>
     <dimen name="dp_224">224dp</dimen>
     <dimen name="dp_240">240dp</dimen>
     <dimen name="dp_260">260dp</dimen>
     <dimen name="dp_300">300dp</dimen>
     <dimen name="dp_320">320dp</dimen>
+    <dimen name="dp_339">339dp</dimen>
     <dimen name="dp_380">380dp</dimen>
     <dimen name="dp_400">400dp</dimen>
     <!--dimens for constraint layout-->

@@ -1,3 +1,12 @@
 <resources>
     <string name="app_name">Codeland</string>
+    <string name="label_username">UserName</string>
+    <string name="label_userpass">Password</string>
+    <string name="message_username_empty">Username cannot be empty</string>
+    <string name="message_userpassword_empty">Password cannot be empty</string>
+    <string name="label_login">Login</string>
+    <string name="label_for_hce_s">for HCE’s</string>
+    <string name="message_biomedical_kiosk">Biomedical Kiosk</string>
+    <string name="message_image_uploaded">Image has been uploaded</string>
+    <string name="message_image_saved_to_Gallery">Image has been saved to gallery</string>
 </resources>
